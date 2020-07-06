@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".FirstPage">
+
+    <Button
+        android:id="@+id/tvamb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderbutton"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Ambulance Signup  "
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/tvtoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/borderbutton"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Toll Booth Signup  "
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/borderbutton"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="User Signup  "
+        android:textSize="25dp" />
+</LinearLayout>

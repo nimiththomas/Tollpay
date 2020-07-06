@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/button_round"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <pl.droidsonroids.gif.GifTextView
+            android:id="@+id/gif"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/complte" />
+
+        <TextView
+            android:id="@+id/tvsuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gif"
+            android:gravity="center"
+
+            android:text="@string/regcompleted"
+            android:textColor="#2196F3"
+
+            ></TextView>
+
+        <TextView
+            android:id="@+id/tvcontinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvsuccess"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="14dp"
+            android:text="To continue "
+            android:textColor="#2196F3"></TextView>
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvsuccess"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue"
+            android:text="Login"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

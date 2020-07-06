@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tollpay">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".DemoActivity"></activity>
+        <activity
+            android:name=".NewUpdateTollLocation"
+            android:parentActivityName=".TollHome" />
+
+        <service android:name=".FirebaseTokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Feedback" />
+        <activity
+            android:name=".AmbulanceMaps"
+            android:parentActivityName=".AmbulanceHome" />
+        <activity
+            android:name=".QRCodeScanner"
+            android:parentActivityName=".TollHome" />
+        <activity
+            android:name=".ViewQRCode"
+            android:parentActivityName=".UserHome" />
+        <activity
+            android:name=".AddtoWallet"
+            android:parentActivityName=".UserHome" />
+        <activity android:name=".SelectAmount" />
+        <activity android:name=".SelectVehicletoPay" />
+        <activity
+            android:name=".AddTollRates"
+            android:parentActivityName=".TollHome" />
+        <activity
+            android:name=".AmbulanceProfile"
+            android:parentActivityName=".AmbulanceHome" />
+        <activity
+            android:name=".EditAmbulanceProfile"
+            android:parentActivityName=".AmbulanceProfile" />
+        <activity
+            android:name=".AmbulanceChangePassword"
+            android:parentActivityName=".AmbulanceProfile" />
+        <activity
+            android:name=".TollProfile"
+            android:parentActivityName=".TollHome" />
+        <activity
+            android:name=".EditUserProfile"
+            android:parentActivityName=".UserProfile" />
+        <activity
+            android:name=".UserProfile"
+            android:parentActivityName=".UserHome" />
+        <activity
+            android:name=".UserChangePassword"
+            android:parentActivityName=".UserProfile" />
+        <activity
+            android:name=".TollChangePassword"
+            android:parentActivityName=".TollProfile" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".NewMapsActivity"
+            android:label="@string/title_activity_new_maps" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".TollViewMap"
+            android:label="@string/title_activity_toll_view_map" />
+        <activity android:name=".UpdateTollLocation" />
+        <activity
+            android:name=".TollRegistration2"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity android:name=".TollHome" />
+        <activity
+            android:name=".TollRegistration"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity
+            android:name=".ChooseVehicle"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity android:name=".UserHome" />
+        <activity
+            android:name=".UserRegistration1"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity android:name=".AmbulanceHome" />
+        <activity
+            android:name=".AmbulanceRegistration2"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity android:name=".SplashPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity
+            android:name=".AmbulanceRegistration"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <activity android:name=".FirstPage" />
+        <activity android:name=".Registration" />
+        <activity
+            android:name=".QRCodeScannerModified"
+            android:parentActivityName=".TollHome" />
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".CardPayment"
+            android:parentActivityName=".AddtoWallet" />
+    </application>
+
+</manifest>

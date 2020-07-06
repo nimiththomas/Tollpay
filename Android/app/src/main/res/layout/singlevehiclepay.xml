@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+ android:padding="20dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
+        android:background="#817E7E"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/vehicon"
+        android:layout_below="@+id/select"
+        android:src="@drawable/car"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="vehname"
+        android:id="@+id/vehname"
+        android:layout_below="@id/select"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/vehicon"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="vehname"
+        android:id="@+id/vehreg"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/vehname"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/vehicon"/>
+
+</RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "805618290160",
+    "firebase_url": "https://tollpay-6126a.firebaseio.com",
+    "project_id": "tollpay-6126a",
+    "storage_bucket": "tollpay-6126a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805618290160:android:2d8bd6cb3204ba32f6e135",
+        "android_client_info": {
+          "package_name": "com.example.tollpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805618290160-5sve9gdqd2hntvh9uq24cfma5h26c2mb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tollpay",
+            "certificate_hash": "4f07ec48a36a54a3b6cf2a5a097b7285a897a2df"
+          }
+        },
+        {
+          "client_id": "805618290160-lagsmbhrqe9jq5beotlendj4a3bta35a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUTvEE4F61YyK6uj4hTFoYUemx2ZIq8tE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805618290160-lagsmbhrqe9jq5beotlendj4a3bta35a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

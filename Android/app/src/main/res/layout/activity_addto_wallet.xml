@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="30dp"
+
+    tools:context=".AddtoWallet">
+
+
+    <TextView
+        android:id="@+id/bal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Wallet Balance:"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/balamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+
+        android:text="0"
+        android:textSize="58sp" />
+
+    <Button
+        android:id="@+id/btnaddmoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="300dp"
+        android:background="@color/blue"
+        android:text="Add Money"
+        android:textSize="16dp"
+        android:textColor="#fff" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TollPay</string>
+    <string name="regcompleted">You have registered succesfully....</string>
+    <string name="title_activity_toll_view_map">Map</string>
+    <string name="title_activity_new_maps">Map</string>
+    <string name="wallet"> * Recharge for a minimum amount of ₹ 200 to  unlock wallet</string>
+    <string name="lowbalance"> * Keep the amount above ₹ 100 for proper functioning of wallet</string>
+</resources>
